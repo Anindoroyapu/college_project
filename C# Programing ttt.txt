@@ -1,0 +1,498 @@
+#Max Number Program
+namespace ConsoleApp20
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int a, b, c;
+            Console.Write("Input value of a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input value of b=");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input value of c=");
+            c = Convert.ToInt32(Console.ReadLine());
+            if (a > b && a > c)
+            {
+                Console.WriteLine("Maximum number = "+ a);
+            }
+            else if (b > a && b > c)
+            {
+                Console.WriteLine("Maximum number = "+ b);
+            }
+            else
+            {
+                Console.WriteLine("Maximum number = "+ c);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+#Sum
+namespace ConsoleApp16
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            Console.WriteLine("Enter the first num = ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the second num = ");
+            b = Convert.ToInt32(Console.ReadLine());
+            c = a + b;
+            Console.WriteLine("REsult is = " + c);
+            Console.ReadKey();
+        }
+    }
+}
+
+#Triangle Area
+
+namespace ConsoleApp22
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, s, area;
+            Console.Write("Input value of a=");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of b=");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of c=");
+            c = Convert.ToDouble(Console.ReadLine());
+            if ((a + b) > c && (b + c) > a && (a + c) > b)
+            {
+                s = (a + b + c) / 2;
+                area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+                Console.WriteLine("Triangle area is =" + area);
+            }
+            else
+            {
+                Console.WriteLine("Triangle is not possoible");
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}
+
+#leep year
+namespace ConsoleApp31
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int year;
+            year = 2010;
+            if (year % 4 == 0)
+            {
+                Console.WriteLine(year + ",is a leep year");
+            }
+            else
+            {
+                Console.WriteLine(year + ",is not leep year");
+            }
+
+
+        }
+    }
+}
+
+
+#Quadretic Equation
+namespace ConsoleApp32
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a,b,c,d,x1,x2;
+            Console.Write("Input value of a=");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of b=");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of c=");
+            c = Convert.ToDouble(Console.ReadLine());
+            d = (b * b - 4 * a * c);
+            if (d >= 0)
+            {
+                x1 = (-b + Math.Sqrt(d)/(2*a));
+                x2 = (-b - Math.Sqrt(d)/(2*a));
+                Console.WriteLine("1st root x1 =" +x1);
+                Console.WriteLine("2nd root x2 =" +x2);
+            }
+            else
+            {
+                Console.WriteLine("Roots are immagin");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+#preincriment=postincrimen
+namespace ConsoleApp37
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            int b;
+            b = ++a;
+            Console.WriteLine("Output is a=" + a);
+            Console.WriteLine("Output is b=" + b);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+#Febonacci
+
+
+namespace ConsoleApp37
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 0, b = 1, i, n, sum;
+            Console.WriteLine("Input Element=");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= n; i = i + 1)
+            {
+                sum = a + b;
+                Console.Write("    " + sum);
+                a = b;
+                b = sum;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+
+# odd Number
+namespace ConsoleApp43
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {  for(int i = 1; i <= 100; i = i + 2)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.ReadKey();
+        } 
+    }
+}
+
+#even NUmber 
+namespace ConsoleApp43
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {  for(int i = 0; i <= 100; i = i + 2)
+            {
+                Console.WriteLine(i);
+
+            }
+            Console.ReadKey();
+        } 
+    }
+}
+
+
+#1+2+3+.........n
+
+namespace ConsoleApp43
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,n, sum=0;
+            Console.Write("Enter value of n = ");
+            n = Convert.ToInt32(Console.ReadLine());
+            for(i = 0; i <=n;  i++)
+            {
+                sum = sum + i;
+                
+
+            }
+            Console.WriteLine("Result is = " + sum);
+            Console.ReadKey();
+        } 
+    }
+}
+
+#odd Even
+namespace ConsoleApp43
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            Console.Write("Enter value of n = ");
+            n = Convert.ToInt32(Console.ReadLine());
+            if (n % 2 == 0)
+            {
+                Console.WriteLine("Number of Even");
+            }
+
+            else
+            {
+                Console.WriteLine("Number of Odd");
+            }
+            Console.ReadKey();
+        } 
+    }
+}
+
+
+#voile consonent
+
+namespace ConsoleApp44
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch;
+            Console.WriteLine("enter an alphabet");
+            ch = Convert.ToChar(Console.ReadLine());
+            switch (char.ToLower(ch))
+            {
+                case 'a':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("vowel");
+                    break;
+                default:
+                    Console.WriteLine("not a vowel");
+                    break;
+
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+#single inheritence
+
+namespace cmt4th
+{
+
+    class A
+    {
+        public int a, b, c;
+
+        public void input()
+        {
+
+            Console.Write("input value of a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("input value of b=");
+            b = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+
+    class B : A
+    {
+        public void Process()
+        {
+
+            c = a + b;
+            Console.WriteLine("result is="+ c);
+        }
+
+    }
+
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            B obj = new B();
+            obj.input();
+            obj.Process();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+#Multilavel inheritence
+
+namespace cmt4th
+{
+
+    class A
+    {
+        public int a, b, c;
+
+
+    }
+
+    class B : A
+    {
+
+        public void input()
+        {
+            Console.Write("input value of a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("input value of b=");
+            b = Convert.ToInt32(Console.ReadLine());
+        }
+
+    }
+
+
+    class C : B
+    {
+        public void Process()
+        {
+
+            c = a + b;
+            Console.WriteLine("Result is="+ c);
+        }
+
+    }
+
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            C obj = new C();
+            obj.input();
+            obj.Process();
+            Console.ReadKey();
+        }
+    }
+
+
+
+#Multiple/interface/paramitter vallu pass
+
+
+using System;
+using System.Net.NetworkInformation;
+
+namespace cmt4th
+{
+    interface calc1
+    {
+        int add(int a, int b);
+    }
+    interface calc2
+    {
+        int sub(int x, int y);
+    }
+
+    class Calculation : calc1, calc2
+    {
+        public int result1;
+        public int add(int a, int b)
+        {
+            return result1 = a + b;
+        }
+
+        public int result2;
+        public int sub(int x, int y)
+        {
+            return result2 = x - y;
+        }
+
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Calculation c = new Calculation();
+                c.add(8, 7);
+                c.sub(20, 10);
+
+
+                Console.WriteLine("Addition " + c.result1); 
+               
+                Console.WriteLine("Substraction: " + c.result2); 
+               
+
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+
+#constructor
+
+using System;
+namespace cmt4th
+{
+    class User
+    {
+        public string name, location;
+        // Default Constructor
+        public User()
+        {
+            name = "Cmt4th or rashid";
+            location = "Khulna,Bangladesh";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User user = new User();
+            Console.WriteLine(user.name);
+            Console.WriteLine(user.location);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+______________________________________________________
+#odd
+{
+            int i,n;
+            for (i = 0; i <= 100; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    Console.WriteLine(+i  );
+                }
+            }
+            Console.ReadKey(); 
+        }
