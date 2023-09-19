@@ -1,0 +1,35 @@
+namespace ConsoleApp44
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch;
+            Console.WriteLine("enter an alphabet");
+            ch = Convert.ToChar(Console.ReadLine());
+            switch (char.ToLower(ch))
+            {
+                case 'a':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'e':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'i':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'o':
+                    Console.WriteLine("vowel");
+                    break;
+                case 'u':
+                    Console.WriteLine("vowel");
+                    break;
+                default:
+                    Console.WriteLine("not a vowel");
+                    break;
+
+            }
+            Console.ReadKey();
+        }
+    }
+}
