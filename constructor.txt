@@ -1,0 +1,25 @@
+using System;
+namespace cmt4th
+{
+    class User
+    {
+        public string name, location;
+        // Default Constructor
+        public User()
+        {
+            name = "Cmt4th or rashid";
+            location = "Khulna,Bangladesh";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            User user = new User();
+            Console.WriteLine(user.name);
+            Console.WriteLine(user.location);
+           
+            Console.ReadLine();
+        }
+    }
+}
