@@ -1,0 +1,21 @@
+namespace ConsoleApp31
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int year;
+            year = 2010;
+            if (year % 4 == 0)
+            {
+                Console.WriteLine(year + ",is a leep year");
+            }
+            else
+            {
+                Console.WriteLine(year + ",is not leep year");
+            }
+
+
+        }
+    }
+}
