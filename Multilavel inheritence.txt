@@ -1,0 +1,46 @@
+namespace cmt4th
+{
+
+    class A
+    {
+        public int a, b, c;
+
+
+    }
+
+    class B : A
+    {
+
+        public void input()
+        {
+            Console.Write("input value of a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("input value of b=");
+            b = Convert.ToInt32(Console.ReadLine());
+        }
+
+    }
+
+
+    class C : B
+    {
+        public void Process()
+        {
+
+            c = a + b;
+            Console.WriteLine("Result is="+ c);
+        }
+
+    }
+
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+
+            C obj = new C();
+            obj.input();
+            obj.Process();
+            Console.ReadKey();
+        }
+    }
