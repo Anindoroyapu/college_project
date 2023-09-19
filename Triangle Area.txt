@@ -1,0 +1,29 @@
+namespace ConsoleApp22
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, s, area;
+            Console.Write("Input value of a=");
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of b=");
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Input value of c=");
+            c = Convert.ToDouble(Console.ReadLine());
+            if ((a + b) > c && (b + c) > a && (a + c) > b)
+            {
+                s = (a + b + c) / 2;
+                area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+                Console.WriteLine("Triangle area is =" + area);
+            }
+            else
+            {
+                Console.WriteLine("Triangle is not possoible");
+            }
+
+
+            Console.ReadKey();
+        }
+    }
+}
