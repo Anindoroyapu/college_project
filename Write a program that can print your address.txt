@@ -1,0 +1,7 @@
+Write a program that can print your address
+
+
+#include<stdio.h>
+main(){
+    Printf("My address Gobra Bazar Narail");
+}
