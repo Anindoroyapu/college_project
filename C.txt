@@ -1,0 +1,380 @@
+Write a program that can print your address
+ 
+#include<stdio.h>
+main(){
+printf("My address Gobra Bazar Narail.");
+}
+
+...................................
+Write a program that can store two integer value and Print it.
+
+#include<stdio.h>
+main(){
+int a,b;
+printf("Add two numbers");
+printf("\nEnter value a=");
+scanf("%d",&a);
+printf("%d",a);
+printf("\nEnter value b=");
+scanf("%d",&b);
+printf("%d",b);
+printf("%d%d",a,b);
+getch();
+}
+
+.......................................................
+Enter two value and add them
+
+#include<stdio.h>
+main(){
+int a,b,c;
+printf("Add two numbers");
+printf("\nEnter value a=");
+scanf("%d",&a);
+printf("\nEnter value b=");
+scanf("%d",&b);
+c=a+b;
+printf("\sum=%d,c");
+getch();
+}
+
+.....................................................
+Write a program that say day name.
+
+#include<stdio.h>
+main(){
+int day;
+scanf("%d",&day);
+if(day==1)
+printf("Saturday");
+if(day==2)
+printf("Sunday");
+if(day==3)
+printf("Monday");
+if(day==4)
+printf("Tuesday");
+if(day==5)
+printf("Wednesday");
+if(day==6)
+printf("Thursday");
+if(day==7)
+printf("Friday");
+getch();
+}
+
+.......................................................
+Write a program that can test whether a number is odd or even.
+
+#include<stdio.h>
+main(){
+int a,n;
+printf("\nEnter the value=");
+scanf("%d",&a);
+n=a%2;
+if(n==0){
+printf("\nThe number in Even");
+}
+else{
+printf("The number in Odd");
+}
+getch();
+}
+
+.................................................
+write a program that can find the largest number from the inputs.
+
+#include<stdio.h>
+main(){
+int a,b ;
+scanf("%d%d",&a,&b);
+if(a>b){
+printf("A is large");
+}
+else{
+printf("B is large");
+}
+getch();
+}
+
+.........................................................
+Write a program that can print the input numbers in reversal ordder.
+
+#include<stdio.h>
+main(){
+int num , i;
+printf("\nGive your number=");
+scanf("%d",&num);
+while(num!=0)
+{
+printf("%d",num%10);
+num=num/10;
+}
+getch();
+}
+
+..........................................................
+Write a program that can find the Area of the rectangle.
+
+#include<stdio.h>
+main(){
+int a,b,r;
+printf("Enter A=");
+scanf("%d",&a);
+printf("Enter B=");
+scanf("%d",&b);
+r=a*b;
+printf("the area of Rectangle is=%d",r);
+getch();
+}
+
+..........................................................
+Write a program that can find the area of the circel.
+
+#include<stdio.h>
+main(){
+float A ,r;
+printf("Enter the value of Radious=");
+scanf("%f",&r);
+A=3.1416*r*r;
+printf("Area of circle is =%f",A);
+getch();
+}
+
+....................................................
+Write a program that can find the area of the Square.
+
+#include<stdio.h>
+main(){
+float a , result;
+printf("Enter the value of a =");
+scanf("%f",&a);
+result=a*a;
+printf("The square is =%f",result);
+getch();
+}
+
+.........................................................
+Write a program that can find the area of the Triangle.
+
+#include<stdio.h>
+#include<math.h>
+main(){
+float a,b,c,s,r;
+printf("Enter the number of Triangle is =");
+scanf("%f%f%f",&a,&b,&c);
+if((a+b>c)&&(b+c>a)&&(c+a>b))
+{
+printf("Area of the triangle=%f",r);
+}
+else{
+printf("Tringle in  not possible");
+}
+getch();
+}
+
+................................................................
+Write a program that  can find the area of a Cube.
+
+#include<stdio.h>
+main(){
+float a, r;
+printf("Enter the value of A =");
+scanf("%f",&a);
+r=(a*a*a);
+printf("The Cube is =%f",r);
+getch();
+}
+
+..........................................................
+
+Write a program that can find Average of three number.
+
+#include<stdio.h>
+main(){
+float a,b,c,s;
+printf("Enter three number=");
+scanf("%f%f%f",&a,&b,&c);
+s=(a+b+c)/3;
+printf("The Average is =%f",s);
+getch();
+}
+
+.....................................
+Write a Program that can print the odd numbers between 5 to 20.
+
+#include<stdio.h>
+main(){
+int k;
+for (k=5;k<20;k=k+2)
+{
+printf("%2d",k);
+}
+getch();
+}
+
+..........................................
+Write a program that can say the divisible numbers of the integer value.
+
+#include<stdio.h>
+main(){
+int num,i;
+printf("\nGive your number=");
+scanf("%d",&num);
+for(i=1;i<=num;i++)
+{
+if (num%i==0)
+{
+printf("%3d",i)
+}
+}
+getch();
+}
+
+.................................................
+Write a program that can print the odd numbers from 5 to 20 using while Loop.
+
+#include<stdio.h>
+main(){
+int k;
+k=5;
+While(k<=20);
+{
+printf("%3d",k);
+k=k+2;
+}
+getch();
+}
+
+................................................
+Write a program that can print the odd numbers from 5 to 20 using for loop.
+
+#include<stdio.h>
+main(){
+int k;
+for (k=5,k<=20,k=k+2)
+{
+printf("%4d",k);
+}
+getch();
+}
+
+.........................................
+Write a program that can print the odd numbers from 5 to 20 using do-while lood.
+
+#include<stdio.h>
+main(){
+int k ;
+k=5;
+do
+{
+printf("%4d",k);
+k=k+2;
+}
+while(k<=20);
+getch();
+}
+
+.............................................
+Write a program that can store data in array variable using for loop.
+
+#include<stdio.h>
+main(){
+int k ,n , a[100];
+printf("\nHow many numbers you want to read?");
+scanf("%d",&n);
+for(k=0;k<n;k++)
+{
+printf("\nEnter a[]%d=",k);
+scanf("%d",&a[k]);
+}
+for (k=0;k<n;k++)
+{
+printf("%4d",a[k]);
+}
+getch();
+}
+
+.............................................
+Write a program that can store data in array variable and show it in reversal order using for loop.
+
+#include<stdio.h>
+main(){
+int k,n,a[100];
+printf("\nHow many numbers you want to read?");
+scanf("%d",&n);
+for(k=0;k<n;k++)
+{
+printf("\nEnter  a [%d]=",k+1);
+scanf("%d"&a[k]);
+}
+for (k=n-1;k>=0;k--)
+{
+printf("%4d",a[k]);
+}
+getch();
+}
+
+..................................................
+
+Write a program that can find factorial value using function.
+
+#include<stdio.h>
+int testfac(int n)
+{
+int i,k;
+k=1;
+for (i=1;i<=n;i++)
+{
+k=k*i;
+}
+return(k);
+}
+main(){
+int x,y;
+scanf("%d",&x)
+y=testfac(x);
+printf("%d",y);
+getch();
+}
+
+..............................................
+Write a program that can store two value into different file and after reading that two value again can store the sum of them into another file.
+
+#include<stdio.h>
+main(){
+FILE*sherlock,*watson,*adler;
+int a,b;
+sherlock=fopen("Sourav.cpp","w");
+fprintf(sherlock,"%d",20);
+watson=fopen("Marry.cpp","w");
+fprintf(watson,"%d",10);
+fclose(sherlock);
+fclose(watson);
+sherlock=fopen("Sourav.cpp","r");
+fscanf(sherlock,"%d",&a);
+watson=fopen("Marry.cpp","r");
+fprintf(watson,"%d",&b);
+adler=fopen("Result.cpp","w");
+fprintf(adler,"%d",a+b);
+getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
